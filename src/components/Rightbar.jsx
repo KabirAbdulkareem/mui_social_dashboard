@@ -1,5 +1,6 @@
 import { Avatar, AvatarGroup, Box, Typography } from "@mui/material";
 import React from "react";
+import LatestConversations from "./LatestConversations";
 import ImageList from "./OnlineFriends";
 
 function Rightbar() {
@@ -53,6 +54,8 @@ function Rightbar() {
         </AvatarGroup>
         
         <ImageList />
+
+        <LatestConversations />
       </Box>
     </Box>
   );
