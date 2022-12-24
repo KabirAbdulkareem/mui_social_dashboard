@@ -51,9 +51,7 @@ function Rightbar() {
             src="https://mui.com/static/images/avatar/10.jpg"
           />
         </AvatarGroup>
-        <Typography variant="h6" fontWeight={100} mt={2} mb={2}>
-          Latest Photos
-        </Typography>
+        
         <ImageList />
       </Box>
     </Box>
