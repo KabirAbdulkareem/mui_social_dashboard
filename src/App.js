@@ -8,7 +8,8 @@ import AddButton from "./components/AddButton";
 import AddModal from "./components/AddModal";
 
 function App() {
-  return (
+  /*   const [openModal, setOpenModal] = useState(false);
+   */ return (
     <div>
       <Box>
         <Navbar />
@@ -17,6 +18,7 @@ function App() {
           <Feed />
           <Rightbar />
         </Stack>
+
         <AddButton />
         <AddModal />
       </Box>
