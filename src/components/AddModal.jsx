@@ -6,7 +6,15 @@ import Fab from "@mui/material/Fab";
 import AddIcon from "@mui/icons-material/Add";
 import Tooltip from "@mui/material/Tooltip";
 import { Avatar, styled } from "@mui/material";
-import TextField from '@mui/material/TextField';
+import Stack from "@mui/material/Stack";
+import TextField from "@mui/material/TextField";
+import EmojiEmotionsIcon from "@mui/icons-material/EmojiEmotions";
+import ImageIcon from "@mui/icons-material/Image";
+import VideoCameraBackIcon from "@mui/icons-material/VideoCameraBack";
+import PersonAddIcon from "@mui/icons-material/PersonAdd";
+import Button from "@mui/material/Button";
+import ButtonGroup from "@mui/material/ButtonGroup";
+import DateRangeIcon from "@mui/icons-material/DateRange";
 
 const style = {
   position: "absolute",
@@ -69,14 +77,28 @@ const AddModal = () => {
             <Typography>Kabir</Typography>
           </UserBox>
           <TextField
-          sx={{width: "100%"}}
+            sx={{ width: "100%" }}
             id="standard-multiline-static"
-            label="Multiline"
             multiline
             rows={3}
             placeholder="What's on your mind?"
             variant="standard"
           />
+          <Stack direction="row" spacing={1} mt={2} mb={2}>
+            <EmojiEmotionsIcon />
+            <ImageIcon color="primary" />
+            <VideoCameraBackIcon color="success" />
+            <PersonAddIcon color="error" />
+          </Stack>
+          <ButtonGroup fullWidth
+            variant="contained"
+            aria-label="outlined primary button group"
+          >
+            <Button>Post</Button>
+            <Button sx={{width:"fit-content", paddingRight:"2rem", paddingLeft:"2rem"}}>
+              <DateRangeIcon />
+            </Button>
+          </ButtonGroup>
         </Box>
       </Modal>
     </div>

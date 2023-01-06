@@ -8,8 +8,7 @@ import AddButton from "./components/AddButton";
 import AddModal from "./components/AddModal";
 
 function App() {
-  /*   const [openModal, setOpenModal] = useState(false);
-   */ return (
+  return (
     <div>
       <Box>
         <Navbar />
